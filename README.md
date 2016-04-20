@@ -7,8 +7,8 @@ This repository is a tutorial for a first contact with the [Sinatra](http://www.
 Create a new folder to put your sinatra app in. For instance:
 
 ```bash
-mkdir ~/code/$MY_GITHUB_NICKNAME/cookbook-sinatra
-cd ~/code/$MY_GITHUB_NICKNAME/cookbook-sinatra
+mkdir ~/code/$GITHUB_USERNAME/cookbook-sinatra
+cd ~/code/$GITHUB_USERNAME/cookbook-sinatra
 ```
 
 In this directory, we create a [`Gemfile`](http://bundler.io/v1.5/gemfile.html) to specify which gems we'd like to use in this project.
