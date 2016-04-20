@@ -25,6 +25,8 @@ source "https://rubygems.org"
 gem "sinatra"
 gem "sinatra-contrib"
 gem "pry-byebug"
+gem "better_errors"
+gem "binding_of_caller"
 ```
 
 In the terminal, run the following command to fetch the gems specified in the `Gemfile`:
@@ -69,6 +71,11 @@ In this file, you can copy/paste with this boilerplate:
 require "sinatra"
 require "sinatra/reloader" if development?
 require "pry-byebug"
+require "better_errors"
+configure :development do
+  use BetterErrors::Middleware
+  BetterErrors.application_root = File.expand_path('..', __FILE__)
+end
 
 get '/' do
   'Hello world!'
