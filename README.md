@@ -317,3 +317,48 @@ Open the `views/layout.erb` file in Sublime Text and copy/paste this boilerplate
 You can notice in this boilerplate the `<%= yield %>` line. It's where your specific view will be inserted.
 
 You can add some CSS in the `public/application.css` file and some JavaScript in the `public/application.js` one.
+
+## Share with the world
+
+Proud of your app? You'd like other people to see it? Well, they can't access your `localhost`. So we'll have to do some more configuration.
+
+First, kill your server with `Ctrl` + `C`. Open your `app.rb` and **after** all the `require`, add this line:
+
+```
+set :bind, '0.0.0.0'
+```
+
+In the terminal, restart the server with `ruby app.rb`. Now the server will be able to listen to external incoming requests. To get your local IP address, you can run the following command:
+
+```
+ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print '
+```
+
+You should see your IP address (something like `192.168.x.x` or `10.0.x.x`). Then other people on the **local network** will be able to access your app with `http://your_ip_address:4567`.
+
+If you want to share your app with people outside the local network (someone at home for instance), we'll use [ngrok](https://ngrok.com/).
+
+On OSX, you can get it with:
+
+```bash
+brew cask install ngrok
+brew install homebrew/binary/ngrok2
+```
+
+(On Ubuntu, you'll have to download it manually, [follow the tutorial](https://ngrok.com/download))
+
+Then open a new terminal and run:
+
+```bash
+ngrok http 4567
+```
+
+Like for `ruby app.rb`, it will run in a loop. You'll see something like this:
+
+```bash
+# [...]
+# Web Interface                 http://127.0.0.1:4040
+# Forwarding                    http://600c15a0.ngrok.io -> localhost:4567
+```
+
+Open your web browser and go to the `x.ngrok.io:4567` URL given by the interface. Great, you can see your app! And so can anybody on the Internet, just share this URL with your friend, on Slack, anywhere :tada: !
