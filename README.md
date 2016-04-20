@@ -7,8 +7,8 @@ This repository is a tutorial for a first contact with the [Sinatra](http://www.
 Create a new folder to put your sinatra app in. For instance:
 
 ```bash
-mkdir ~/code/$MY_GITHUB_NICKNAME>/cookbook-sinatra
-cd ~/code/$MY_GITHUB_NICKNAME/cookbook-sinatra
+mkdir ~/code/$GITHUB_USERNAME/cookbook-sinatra
+cd ~/code/$GITHUB_USERNAME/cookbook-sinatra
 ```
 
 In this directory, we create a [`Gemfile`](http://bundler.io/v1.5/gemfile.html) to specify which gems we'd like to use in this project.
@@ -33,7 +33,7 @@ In the terminal, run the following command to fetch the gems specified in the `G
 bundle install
 ```
 
-If you `git status`, you should see 2 files: `Gemfile` and `Gemfile.lock`. The `Gemfile` is where you put your project dependencies (_i.e._ which gem you want to `require` in your project), and the `Gemfile.lock` is an **auto-generated** file which specifies versions for each gem. It **locks** them actually.
+In you `git status`, you should see 2 files: `Gemfile` and `Gemfile.lock`. The `Gemfile` is where you put your project dependencies (_i.e._ which gem you want to `require` in your project), and the `Gemfile.lock` is an **auto-generated** file which specifies versions for each gem. It **locks** them actually.
 
 Time for some checkpoint, we can commit our work:
 
@@ -44,7 +44,7 @@ git status
 git commit -m "Init sinatra project"
 ```
 
-Now we'll also produly push our code to GitHub :)
+Now we'll also proudly push our code to GitHub :)
 
 ```bash
 hub create                 # came from `brew install hub` or `gem install hub` on Linux
@@ -324,13 +324,13 @@ Proud of your app? You'd like other people to see it? Well, they can't access yo
 
 First, kill your server with `Ctrl` + `C`. Open your `app.rb` and **after** all the `require`, add this line:
 
-```
+```ruby
 set :bind, '0.0.0.0'
 ```
 
 In the terminal, restart the server with `ruby app.rb`. Now the server will be able to listen to external incoming requests. To get your local IP address, you can run the following command:
 
-```
+```bash
 ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print '
 ```
 
