@@ -88,7 +88,7 @@ end
 That's it. It says that for an HTTP request at the root (`/`), it will return `Hello world!`. Open a new tab in your terminal and run this:
 
 ```bash
-ruby app.rb
+bundle exec ruby app.rb
 ```
 
 You should get this output:
