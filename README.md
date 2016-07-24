@@ -2,6 +2,14 @@
 
 This repository is a tutorial for a first contact with the [Sinatra](http://www.sinatrarb.com/) gem, a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) for quickly creating web applications in Ruby with minimal effort.
 
+## Architecture
+
+We coded a simple MVC architecture where the user communicated his/her intent thanks to the **router infinite loop**, `gets`-ing a number and converting it into a `Controller` method call. In the end, the view give the information back to the user thanks to the simple `puts`.
+
+A web app is really close to this behavior, with two minor differences. First, we use a framework (like Sinatra) to handle the router part. Here, the user expresses his/her intent with an **HTTP request**. It's up to the framework to route this HTTP request to the correct action in the `Controller`. In the end, the view is responsible to build **HTML** which is sent back to the user.
+
+![](images/terminal_vs_sinatra.png)
+
 ## Setup
 
 Create a new folder to put your sinatra app in. For instance:
