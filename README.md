@@ -14,7 +14,7 @@ cd ~/code/$GITHUB_USERNAME/cookbook-sinatra
 git init  # That's a brand new repo!
 ```
 
-In this directory, we create a [`Gemfile`](http://bundler.io/v1.5/gemfile.html) to specify which gems we'd like to use in this project.
+In this directory, we create a [`Gemfile`](http://bundler.io/gemfile.html) to specify which gems we'd like to use in this project.
 
 ```bash
 touch Gemfile
