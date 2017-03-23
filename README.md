@@ -229,7 +229,14 @@ end
 
 Save your `app.rb` file and go to [`localhost:4567/team/ssaunier`](http://localhost:4567/team/ssaunier) and [`localhost:4567/team/Papillard`](http://localhost:4567/team/Papillard). See how you can pass parameters from the URL to the controller in `app.rb`?
 
-Do not hesitate to put a `binding.pry` at the beginning of each controller block to **inspect in the terminal** what you have in `params`. **Very useful**.
+Do not hesitate to put a `binding.pry` at the beginning of each controller block to **inspect in the terminal** what you have in `params`. **Very useful** 👇
+
+```ruby
+get '/team/:username' do
+  binding.pry  # <= code will stop here for HTTP request localhost:4567/team/someone
+  # [...]
+end
+```
 
 Oh and I forgot, `params` can be filled from 3 places:
 
