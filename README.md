@@ -53,7 +53,7 @@ Time for some checkpoint, we can commit our work:
 ```bash
 git status
 # There should be 2 files here
-
+git add .
 git commit -m "Init sinatra project"
 ```
 
