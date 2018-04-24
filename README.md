@@ -367,7 +367,6 @@ On OSX, you can get it with:
 
 ```bash
 brew cask install ngrok
-brew install homebrew/binary/ngrok2
 ```
 
 (On Ubuntu, you'll have to download it manually, [follow the tutorial](https://ngrok.com/download))
