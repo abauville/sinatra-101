@@ -382,7 +382,8 @@ Like for `ruby app.rb`, it will run in a loop. You'll see something like this:
 ```bash
 # [...]
 # Web Interface                 http://127.0.0.1:4040
-# Forwarding                    http://600c15a0.ngrok.io -> localhost:4567
+# Forwarding                    http://________.ngrok.io -> localhost:4567
+# Forwarding                    https://________.ngrok.io -> localhost:4567
 ```
 
-Open your web browser and go to the `x.ngrok.io:4567` URL given by the interface. Great, you can see your app! And so can anybody on the Internet, just share this URL with your friend, on Slack, anywhere :tada: !
+Open your web browser and go to the `http(s)://???.ngrok.io` URL given by the interface. Great, you can see your app! And so can anybody on the Internet, just share this URL with your friend, on Slack, anywhere :tada: !
