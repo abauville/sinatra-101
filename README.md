@@ -216,7 +216,7 @@ If you read on the [Routes](http://www.sinatrarb.com/intro.html#Routes) section 
 # etc.
 ```
 
-Do not write a route for every case! That's not how we code :) Instead, you see the emergence of a **parameter**. So we'll right this route:
+Do not write a route for every case! That's not how we code :) Instead, you see the emergence of a **parameter**. So we'll write this route:
 
 ```ruby
 # [...]
