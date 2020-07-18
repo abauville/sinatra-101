@@ -46,7 +46,7 @@ In the terminal, run the following command to fetch the gems specified in the `G
 bundle install
 ```
 
-In you `git status`, you should see 2 files: `Gemfile` and `Gemfile.lock`. The `Gemfile` is where you put your project dependencies (_i.e._ which gem you want to `require` in your project), and the `Gemfile.lock` is an **auto-generated** file which specifies versions for each gem. It **locks** them actually.
+In your `git status`, you should see 2 files: `Gemfile` and `Gemfile.lock`. The `Gemfile` is where you put your project dependencies (_i.e._ which gem you want to `require` in your project), and the `Gemfile.lock` is an **auto-generated** file which specifies versions for each gem. It **locks** them actually.
 
 Time for some checkpoint, we can commit our work:
 
