@@ -60,11 +60,11 @@ git commit -m "Init sinatra project"
 Now we'll also proudly push our code to GitHub :)
 
 ```bash
-hub create                 # came from `brew install hub` or `gem install hub` on Linux
+gh repo create
 git push origin master
 ```
 
-You can open this project in GitHub with `hub browse`.
+You can open this project in GitHub with `gh repo view --web`.
 
 OK we're ready to write some code!
 
