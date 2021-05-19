@@ -366,7 +366,7 @@ If you want to share your app with people outside the local network (someone at 
 On OSX, you can get it with:
 
 ```bash
-brew cask install ngrok
+brew install --cask ngrok
 ```
 
 (On Ubuntu, you'll have to download it manually, [follow the tutorial](https://ngrok.com/download))
