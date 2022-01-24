@@ -33,11 +33,17 @@ Open this `Gemfile` in Sublime Text (`stt`) and copy-paste this code:
 ```ruby
 source "https://rubygems.org"
 
+gem "thin"
 gem "sinatra"
 gem "sinatra-contrib"
 gem "pry-byebug"
 gem "better_errors"
 gem "binding_of_caller"
+```
+
+For windows user, in the terminal, run:
+```bash
+sudo apt-get install build-essential
 ```
 
 In the terminal, run the following command to fetch the gems specified in the `Gemfile`:
